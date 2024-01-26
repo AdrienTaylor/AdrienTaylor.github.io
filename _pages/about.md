@@ -2,25 +2,27 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href="https://www.di.ens.fr/sierra/">INRIA, École Normale Supérieure, Paris, France.</a>
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  address: >
+    <p>Rue Simone Iff 2
+    <p>75012 Paris, France</p>
+    <p>Office: C422 (level 4)</p>
+    <p>first.last[at]inria.fr</p>
 
-news: true # includes a list of news items
-latest_posts: true # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+news: false  # includes a list of news items
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+## short biography
+hello !
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I am currently a research scientist at Inria, within the [SIERRA](https://www.di.ens.fr/sierra/) team, led by [Francis Bach](http://www.di.ens.fr/~fbach/). I was a postdoctoral researcher in the same team in 2017-2019. Prior to that, I was at [Université catholique de Louvain](http://www.uclouvain.be), in the [department of mathematical engineering](http://www.uclouvain.be/inma) (part of the [ICTEAM](http://www.uclouvain.be/en-icteam.html) institute), where I was holding a [F.R.S.-FNRS FRIA](http://www.fnrs.be/) scholarship for my PhD under the supervision of [François Glineur](http://perso.uclouvain.be/francois.glineur) and [Julien Hendrickx](http://perso.uclouvain.be/julien.hendrickx).
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My research currently focuses on optimization (mostly first-order) and numerical analysis with a bit of control and machine learning. I find it particularly important to push toward reproducible (including theory) and understandable science, and many of my research projects have this orientation.
+
+**tutorial & slides ---** selected sets of slides can be found [here](/tutorials), together with references to tutorials to accelerated first-order methods and principled (and computer-assisted) worst-case analyses.
