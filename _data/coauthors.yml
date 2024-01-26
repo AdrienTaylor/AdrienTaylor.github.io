@@ -1,184 +1,163 @@
-"glineur":
+"Glineur":
   - firstname: ["François", "F.", "François Glineur"]
     url: https://perso.uclouvain.be/francois.glineur/
 
-"hendrickx":
+"Hendrickx":
   - firstname: ["Julien", "M.", "J.M.", "Julien M. Hendrickx", "Julien M.", "Julien Hendrickx"]
     url: https://perso.uclouvain.be/julien.hendrickx
 
-"dieuleveut":
+"Dieuleveut":
   - firstname: ["Aymeric", "Aymeric Dieuleveut"]
     url: http://www.cmap.polytechnique.fr/~aymeric.dieuleveut/
 
-"bach":
+"Bach":
   - firstname: ["Francis", "Francis Bach"]
     url: https://www.di.ens.fr/~fbach/
 
-"d'aspremont":
+"d’Aspremont":
   - firstname: ["Alexandre", "Alexandre d'Aspremont"]
     url: https://www.di.ens.fr/~aspremon/
 
-"aspremont":
-  - firstname: ["Alexandre", "Alexandre d'Aspremont"]
-    url: https://www.di.ens.fr/~aspremon/
-
-"d’aspremont":
-  - firstname: ["Alexandre", "Alexandre d’Aspremont"]
-    url: https://www.di.ens.fr/~aspremon/
-
-"d'aspremont":
-  - firstname: ["Alexandre", "Alexandre d'Aspremont"]
-    url: https://www.di.ens.fr/~aspremon/
-
-"daspremont":
-  - firstname: ["Alexandre", "Alexandre d'Aspremont"]
-    url: https://www.di.ens.fr/~aspremon/
-
-"d aspremont":
-  - firstname: ["Alexandre", "Alexandre d'Aspremont"]
-    url: https://www.di.ens.fr/~aspremon/
-
-"taylor":
+"Taylor":
   - firstname: ["Adrien", "Adrien B.", "Adrien Taylor", "Adrien B. Taylor", "A.B. Taylor", "Adrien B", "A. B.", "Taylor"]
     url: https://adrientaylor.github.io/
 
-"drori":
+"Drori":
   - firstname: ["Yoel", "Yoel Drori"]
     url: https://scholar.google.com/citations?user=7pRQY3MAAAAJ&hl=en
 
-"barre":
+"Barré":
   - firstname: ["Mathieu", "Mathieu Barré"]
     url: https://mathbarre.github.io/
 
-"goujaud":
+"Goujaud":
   - firstname: ["Baptiste", "Baptiste Goujaud"]
     url: https://scholar.google.com/citations?user=93PAG2AAAAAJ&hl=en
 
-"pedregosa":
+"Pedregosa":
   - firstname: ["Fabian", "Pedregosa"]
     url: https://fa.bianp.net/
 
-"scieur":
+"Scieur":
   - firstname: ["Damien", "Scieur"]
     url: https://damienscieur.com/
 
-"dragomir":
+"Dragomir":
   - firstname: ["Radu-Alexandru", "Dragomir"]
     url: https://perso.uclouvain.be/radu.dragomir/
 
-"bolte":
+"Bolte":
   - firstname: ["Jérôme", "Bolte"]
     url: https://www.tse-fr.eu/fr/people/jerome-bolte
 
-"even":
+"Even":
   - firstname: ["Mathieu", "Even"]
     url: https://mathieueven.netlify.app/
 
-
-"berthier":
+"Berthier":
   - firstname: ["Raphaël", "Berthier"]
     url: https://raphael-berthier.github.io/
 
-"flammarion":
+"Flammarion":
   - firstname: ["Nicolas", "Flammarion"]
     url: https://www.di.ens.fr/~flammarion/
 
-"gaillard":
+"Gaillard":
   - firstname: ["Pierre", "Gaillard"]
     url: http://pierre.gaillard.me/research.html
 
-"hendrikx":
+"Hendrikx":
   - firstname: ["Hadrien", "Hendrikx"]
     url: https://www.di.ens.fr/~hendrikx/
 
-"massoulie":
+"Massoulié":
   - firstname: ["Laurent", "Massoulié"]
     url: https://www.di.ens.fr/laurent.massoulie/
 
-"ryu":
+"Ryu":
   - firstname: ["Ernest", "Ernest K.", "Ernest Ryu"]
-    url: https://ernestryu.com/
+    url: www.math.snu.ac.kr/~ernestryu/
 
-"bergeling":
+"Bergeling":
   - firstname: ["Carolina", "Bergeling"]
     url: http://www.control.lth.se/Staff/carolina-bergeling.html
 
-"giselsson":
+"Giselsson":
   - firstname: ["Pontus", "Giselsson"]
     url: https://www.control.lth.se/personnel-old/pontus-giselsson/
 
-"de klerk":
+"De Klerk":
   - firstname: ["Etienne", "De Klerk"]
     url: https://sites.google.com/site/homepageetiennedeklerk/
 
-"van scoy":
+"Van Scoy":
   - firstname: ["Bryan", "Van Scoy"]
     url: https://vanscoy.github.io/
 
-"lessard":
+"Lessard":
   - firstname: ["Laurent", "Lessard"]
     url: https://laurentlessard.com/
 
-"gorbunov":
+"Gorbunov":
   - firstname: ["Eduard", "Gorbunov"]
     url: https://eduardgorbunov.github.io/
 
-"gidel":
+"Gidel":
   - firstname: ["Gauthier", "Gidel"]
     url: https://gauthiergidel.github.io/
 
-"berthet":
+"Berthet":
   - firstname: ["Quentin", "Berthet"]
     url: https://q-berthet.github.io/
 
-"dubois-taine":
+"Dubois-Taine":
   - firstname: ["Benjamin", "Dubois-Taine"]
     url: https://bpauld.github.io/
 
-"carpentier":
+"Carpentier":
   - firstname: ["Justin", "Carpentier"]
     url: https://jcarpent.github.io/
 
-"bambade":
+"Bambade":
   - firstname: ["Antoine", "Bambade"]
     url: https://bambade.github.io
 
-"moucer":
+"Moucer":
   - firstname: ["Céline", "Moucer"]
     url: https://www.linkedin.com/in/c%C3%A9line-moucer-88068b173/?originalSubdomain=fr
 
-"el kazdadi":
+"El Kazdadi":
   - firstname: ["Sarah", "El Kazdadi"]
     url: https://www.linkedin.com/in/sarah-kazdadi-059b94210/?originalSubdomain=fr
 
-"horvath":
+"Horvath":
   - firstname: ["Samuel", "Horvath"]
     url: https://sites.google.com/view/samuelhorvath
 
-"das gupta":
+"Das Gupta":
   - firstname: ["Shuvomoy", "Das Gupta"]
     url: https://shuvomoy.github.io/
     
-"sun":
+"Sun":
   - firstname: ["X. Andy", "Sun"]
     url: https://sites.google.com/view/asunlab/
     
-"freund":
+"Freund":
   - firstname: ["Robert M.", "Freund"]
     url: https://mitmgmtfaculty.mit.edu/rfreund/
     
-"banert":
+"Banert":
   - firstname: ["Sebastian", "Banert"]
     url: https://github.com/sbanert
     
-"upadhyaya":
+"Upadhyaya":
   - firstname: ["Manu", "Upadhyaya"]
     url: https://manuupadhyaya.github.io/
     
-"caron":
+"Caron":
   - firstname: ["Stéphane", "Caron"]
     url: https://scaron.info/
     
-"schramm":
+"Schramm":
   - firstname: ["Fabian", "Schramm"]
     url: https://fabinsch.github.io/
