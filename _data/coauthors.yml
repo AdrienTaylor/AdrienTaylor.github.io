@@ -34,7 +34,7 @@
   - firstname: ["Alexandre", "Alexandre d'Aspremont"]
     url: https://www.di.ens.fr/~aspremon/
 
-"d'|'aspremont":
+"d aspremont":
   - firstname: ["Alexandre", "Alexandre d'Aspremont"]
     url: https://www.di.ens.fr/~aspremon/
 
@@ -97,7 +97,7 @@
 
 "ryu":
   - firstname: ["Ernest", "Ernest K.", "Ernest Ryu"]
-    url: www.math.snu.ac.kr/~ernestryu/
+    url: https://ernestryu.com/
 
 "bergeling":
   - firstname: ["Carolina", "Bergeling"]
