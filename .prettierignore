@@ -1,5 +1,6 @@
 *.md
 *.bib
+*.yml
 **/*.min.css
 **/*.min.js
 assets/css/main.scss
