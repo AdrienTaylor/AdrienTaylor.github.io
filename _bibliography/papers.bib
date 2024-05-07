@@ -12,6 +12,27 @@
   journal={Mathematical Programming (to appear)}
 }
 
+@article{goujaud2022pepit,
+	title={PEPit: computer-assisted worst-case analyses of first-order optimization methods in Python},
+	author={Goujaud, Baptiste and Moucer, C{\'e}line and Glineur, Fran{\c{c}}ois and Hendrickx, Julien M. and Taylor, Adrien B. and Dieuleveut, Aymeric},
+	year={2024},
+	journal={arXiv:2201.04040},
+	abbr={preprint},abbr2={1 - preprints},
+	abstract={PEPit is a python package aiming at simplifying the access to worst-case analyses of a large
+	family of first-order optimization methods possibly involving gradient, projection, proximal,
+	or linear optimization oracles, along with their approximate, or Bregman variants.
+	In short, PEPit is a package enabling computer-assisted worst-case analyses of first-
+	order optimization methods. The key underlying idea is to cast the problem of performing
+	a worst-case analysis, often referred to as a performance estimation problem (PEP), as a
+	semidefinite program (SDP) which can be solved numerically. For doing that, the package
+	users are only required to write first-order methods nearly as they would have implemented
+	them. The package then takes care of the SDP modelling parts, and the worst-case analysis
+	is performed numerically via a standard solver.},
+	code={https://github.com/PerformanceEstimation/PEPit},
+	arxiv={2201.04040},
+	bibtex_show={true},
+  	journal={Mathematical Programming Computation(to appear)}
+}
 @inproceedings{bambade2023qplayer,
   title={QPLayer: efficient differentiation of convex quadratic optimization},
   author={Bambade, Antoine and Schramm, Fabian and Taylor, Adrien B. and Carpentier, Justin},
@@ -24,6 +45,7 @@
   code={https://github.com/Simple-Robotics/proxsuite},
   abstract={Optimization layers within neural network architectures have become increasingly popular for their ability to solve a wide range of machine learning tasks and to model domain-specific knowledge. However, designing optimization layers requires careful consideration as the underlying optimization problems might be infeasible during training. Motivated by applications in learning, control, and robotics, this work focuses on convex quadratic programming (QP) layers. The specific structure of this type of optimization layer can be efficiently exploited for faster computations while still allowing rich modeling capabilities. We leverage primal-dual augmented Lagrangian techniques for computing derivatives of both feasible and infeasible QPs. Not requiring feasibility allows, as a byproduct, for more flexibility in the QP to be learned. The effectiveness of our approach is demonstrated in a few standard learning experiments, obtaining three to ten times faster computations than alternative state-of-the-art methods while being more accurate and numerically robust. Along with these contributions, we provide an open-source C++ software package called QPLayer for efficiently differentiating convex QPs and which can be interfaced with modern learning frameworks.}
 }
+
 
 
 %% 2023
@@ -50,6 +72,20 @@ tures of such proofs. We aim at presenting those structures, showing how to buil
 guarantees for first-order optimization methods.}
 }
 
+
+
+@article{moucer2024geometry,
+  title={Geometry-dependent matching pursuit: a transition phase for convergence on linear regression and LASSO},
+  author={Moucer, C{\'e}line and Taylor, Adrien and Bach, Francis},
+  journal={arXiv preprint arXiv:2403.03072},
+  year={2024},
+  journal={arXiv:2301.01530},
+  abbr={preprint}, abbr2={1 - preprints},
+  abstract={Greedy first-order methods, such as coordinate descent with Gauss-Southwell rule or matching pursuit, have become popular in optimization due to their natural tendency to propose sparse solutions and their refined convergence guarantees. In this work, we propose a principled approach to generating (regularized) matching pursuit algorithms adapted to the geometry of the problem at hand, as well as their convergence guarantees. Building on these results, we derive approximate convergence guarantees and describe a transition phenomenon in the convergence of (regularized) matching pursuit from underparametrized to overparametrized models.},
+  code={https://github.com/CMoucer/Geometry_Dependent_Matching_Pursuit},
+  arxiv={2301.01530},
+  bibtex_show={true}
+}
 
 @article{goujaud2023counter,
   	title={Counter-examples in first-order optimization: a constructive approach},
@@ -145,26 +181,6 @@ guarantees for first-order optimization methods.}
 	bibtex_show={true}
 }
 %% 2022
-@article{goujaud2022pepit,
-	title={PEPit: computer-assisted worst-case analyses of first-order optimization methods in Python},
-	author={Goujaud, Baptiste and Moucer, C{\'e}line and Glineur, Fran{\c{c}}ois and Hendrickx, Julien M. and Taylor, Adrien B. and Dieuleveut, Aymeric},
-	year={2022},
-	journal={arXiv:2201.04040},
-	abbr={preprint},abbr2={1 - preprints},
-	abstract={PEPit is a python package aiming at simplifying the access to worst-case analyses of a large
-	family of first-order optimization methods possibly involving gradient, projection, proximal,
-	or linear optimization oracles, along with their approximate, or Bregman variants.
-	In short, PEPit is a package enabling computer-assisted worst-case analyses of first-
-	order optimization methods. The key underlying idea is to cast the problem of performing
-	a worst-case analysis, often referred to as a performance estimation problem (PEP), as a
-	semidefinite program (SDP) which can be solved numerically. For doing that, the package
-	users are only required to write first-order methods nearly as they would have implemented
-	them. The package then takes care of the SDP modelling parts, and the worst-case analysis
-	is performed numerically via a standard solver.},
-	code={https://github.com/PerformanceEstimation/PEPit},
-	arxiv={2201.04040},
-	bibtex_show={true}
-}
 @article{drori2022oracle,
 title = {On the oracle complexity of smooth strongly convex minimization},
 journal = {Journal of Complexity},
