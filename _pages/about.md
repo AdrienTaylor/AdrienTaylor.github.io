@@ -6,7 +6,7 @@ subtitle: <a href="https://www.di.ens.fr/sierra/">INRIA, École Normale Supérie
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_picture2.jpeg
   address: >
     <p>Rue Simone Iff 2
     <p>75012 Paris, France</p>
