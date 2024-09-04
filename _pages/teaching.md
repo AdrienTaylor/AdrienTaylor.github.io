@@ -20,5 +20,5 @@ nav: true
 + as a lecturer:
 	- 2019: (ENS Paris) Convex Optimization (suppl. [Alexandre d'Aspremont](https://www.di.ens.fr/~aspremon/)),
 	- 2020: (Telecom ParisTech) Advanced Machine Learning (with Thomas Bonald, Claire Vernade, Pierre Gaillard and Alessandro Rudi),
-	- 2023: (ENS Paris) Convex Optimization,
-	- 2024: (Ecole Polytechnique) Deep learning and optimization.
+	- 2023, 2024: (ENS Paris) Convex Optimization,
+	- 2024, 2025: (Ecole Polytechnique) Deep learning and optimization.
