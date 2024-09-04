@@ -11,17 +11,18 @@
   bibtex_show={true},
   journal={Mathematical Programming (to appear)}
 }
-
-@article{gupta2023nonlinear,
-  	title={Nonlinear conjugate gradient methods: worst-case convergence rates via computer-assisted analyses},
-  	author={Das Gupta, Shuvomoy and Freund, Robert M. and Sun, X. Andy and Taylor, Adrien B.},
-	year={2024},
-  	abbr={journal},abbr2={3 - journals},
-	abstract={We propose a computer-assisted approach to the analysis of the worst-case convergence of nonlinear conjugate gradient methods (NCGMs). Those methods are known for their generally good empirical performances for large-scale optimization, while having relatively incomplete analyses. Using our computer-assisted approach, we establish novel complexity bounds for the Polak-Ribi`ere-Polyak (PRP) and the Fletcher-Reeves (FR) NCGMs for smooth strongly convex minimization. Conversely, we provide examples showing that those methods might behave worse than the regular steepest descent on the same class of problems.},
-	code={https://github.com/Shuvomoy/NCG-PEP-code},
-	arxiv={2301.01530},
+@article{goujaud2022quadratic,
+	title={Quadratic minimization: from conjugate gradient to an adaptive Polyak’s momentum method with Polyak step-sizes},
+	author={Goujaud, Baptiste and Taylor, Adrien B. and Dieuleveut, Aymeric},
+	arxiv={2210.06367},
 	bibtex_show={true},
-  	journal={Mathematical Programming (to appear)}
+	year={2024},
+	journal={Open Journal of Mathematical Optimization (to appear)},
+	pdf={https://arxiv.org/pdf/2210.06367.pdf},
+	abbr={journal},abbr2={3 - journals},
+	code={https://github.com/bgoujaud/Heavy-ball_polyak_steps},
+	abstract={In this work, we propose an adaptive variation on the classical Heavy-ball method for convex quadratic minimization. The adaptivity crucially relies on so-called ``Polyak step-sizes'', which consists in using the knowledge of the optimal value of the optimization problem at hand instead of problem parameters such as a few eigenvalues of the Hessian of the problem. This method happens to also be equivalent to a variation of the classical conjugate gradient method, and thereby inherits many of its attractive features, including its finite-time convergence, instance optimality, and its worst-case convergence rates.
+	The classical gradient method with Polyak step-sizes is known to behave very well in situations in which it can be used, and the question of whether incorporating momentum in this method is possible and can improve the method itself appeared to be open. We provide a definitive answer to this question for minimizing convex quadratic functions, a arguably necessary first step for developing such methods in more general setups.}
 }
 @article{goujaud2022pepit,
 	title={PEPit: computer-assisted worst-case analyses of first-order optimization methods in Python},
@@ -34,6 +35,17 @@
 	arxiv={2201.04040},
 	bibtex_show={true},
   	journal={Mathematical Programming Computation (to appear)}
+}
+@article{gupta2023nonlinear,
+  	title={Nonlinear conjugate gradient methods: worst-case convergence rates via computer-assisted analyses},
+  	author={Das Gupta, Shuvomoy and Freund, Robert M. and Sun, X. Andy and Taylor, Adrien B.},
+	year={2024},
+  	abbr={journal},abbr2={3 - journals},
+	abstract={We propose a computer-assisted approach to the analysis of the worst-case convergence of nonlinear conjugate gradient methods (NCGMs). Those methods are known for their generally good empirical performances for large-scale optimization, while having relatively incomplete analyses. Using our computer-assisted approach, we establish novel complexity bounds for the Polak-Ribi`ere-Polyak (PRP) and the Fletcher-Reeves (FR) NCGMs for smooth strongly convex minimization. Conversely, we provide examples showing that those methods might behave worse than the regular steepest descent on the same class of problems.},
+	code={https://github.com/Shuvomoy/NCG-PEP-code},
+	arxiv={2301.01530},
+	bibtex_show={true},
+  	journal={Mathematical Programming (to appear)}
 }
 @inproceedings{bambade2023qplayer,
   title={QPLayer: efficient differentiation of convex quadratic optimization},
@@ -79,7 +91,6 @@ guarantees for first-order optimization methods.}
 @article{moucer2024geometry,
   title={Geometry-dependent matching pursuit: a transition phase for convergence on linear regression and LASSO},
   author={Moucer, C{\'e}line and Taylor, Adrien B. and Bach, Francis},
-  journal={arXiv preprint arXiv:2403.03072},
   year={2024},
   journal={arXiv:2301.01530},
   abbr={preprint}, abbr2={1 - preprints},
@@ -88,6 +99,20 @@ guarantees for first-order optimization methods.}
   arxiv={2301.01530},
   bibtex_show={true}
 }
+
+@article{moucer2024geometry,
+  title={Constructive approaches to concentration inequalities with independent random variables},
+  author={Moucer, C{\'e}line and Taylor, Adrien B. and Bach, Francis},
+  year={2024},
+  journal={arXiv:2408.16480},
+  abbr={preprint}, abbr2={1 - preprints},
+  abstract={Concentration inequalities, a major tool in probability theory, quantify how much a random variable deviates from a certain quantity. This paper proposes a systematic convex optimization approach to studying and generating concentration inequalities with independent random variables. Specifically, we extend the generalized problem of moments to independent random variables. We first introduce a variational approach that extends classical moment-generating functions, focusing particularly on first-order moment conditions. Second, we develop a polynomial approach, based on a hierarchy of sum-of-square approximations, to extend these techniques to higher-moment conditions. Building on these advancements, we refine Hoeffding's, Bennett's and Bernstein's inequalities, providing improved worst-case guarantees compared to existing results.},
+  code={https://github.com/CMoucer/ConcentrationInequalities},
+  arxiv={2408.16480},
+  bibtex_show={true},
+	pdf={https://arxiv.org/pdf/2408.16480}
+}
+
 
 @article{goujaud2023counter,
   	title={Counter-examples in first-order optimization: a constructive approach},
@@ -251,19 +276,7 @@ abbr2={3 - journals}
 	abstract={We analyze worst-case convergence guarantees of first-order optimization methods over a function class extending that of smooth and convex functions. This class contains convex functions that admit a simple quadratic upper bound. Its study is motivated by its stability under minor perturbations.
 	We provide a thorough analysis of first-order methods, including worst-case convergence guarantees for several algorithms, and demonstrate that some of them achieve the optimal worst-case guarantee over the class. We support our analysis by numerical validation of worst-case guarantees using performance estimation problems. A few observations can be drawn from this analysis, particularly regarding the optimality (resp. and adaptivity) of the heavy-ball method (resp. heavy-ball with line-search). Finally, we show how our analysis can be leveraged to obtain convergence guarantees over more complex classes of functions. Overall, this study brings insights on the choice of function classes over which standard first-order methods have working worst-case guarantees.}
 }
-@article{goujaud2022quadratic,
-	title={Quadratic minimization: from conjugate gradient to an adaptive Heavy-ball method with Polyak step-sizes},
-	author={Goujaud, Baptiste and Taylor, Adrien B. and Dieuleveut, Aymeric},
-	arxiv={2210.06367},
-	bibtex_show={true},
-	year={2022},
-	journal={arXiv:2210.06367},
-	pdf={https://arxiv.org/pdf/2210.06367.pdf},
-	abbr={preprint},abbr2={1 - preprints},	
-	code={https://github.com/bgoujaud/Heavy-ball_polyak_steps},
-	abstract={In this work, we propose an adaptive variation on the classical Heavy-ball method for convex quadratic minimization. The adaptivity crucially relies on so-called ``Polyak step-sizes'', which consists in using the knowledge of the optimal value of the optimization problem at hand instead of problem parameters such as a few eigenvalues of the Hessian of the problem. This method happens to also be equivalent to a variation of the classical conjugate gradient method, and thereby inherits many of its attractive features, including its finite-time convergence, instance optimality, and its worst-case convergence rates.
-	The classical gradient method with Polyak step-sizes is known to behave very well in situations in which it can be used, and the question of whether incorporating momentum in this method is possible and can improve the method itself appeared to be open. We provide a definitive answer to this question for minimizing convex quadratic functions, a arguably necessary first step for developing such methods in more general setups.}
-}
+
 
 
 @inproceedings{bambade2022prox,
