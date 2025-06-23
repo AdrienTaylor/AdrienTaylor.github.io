@@ -161,3 +161,44 @@
 "Schramm":
   - firstname: ["Fabian", "Schramm"]
     url: https://fabinsch.github.io/
+    
+"Koolen":
+  - firstname: ["Wouter", "Koolen"]
+    url: https://wouterkoolen.info/
+    
+"Schaipp":
+  - firstname: ["Fabian", "Schaipp"]
+    url: https://fabian-sp.github.io/
+    
+"Simsekli":
+  - firstname: ["Umut", "Simsekli"]
+    url: https://www.di.ens.fr/umut.simsekli/
+    
+"Hägele":
+  - firstname: ["Alexander", "Hägele"]
+    url: https://haeggee.github.io/
+    
+"Weibel":
+  - firstname: ["Julien", "Weibel"]
+    url: https://www.normalesup.org/~jweibel/https://fabian-sp.github.io/
+    
+"Rubbens":
+  - firstname: ["Anne", "Rubbens"]
+    url: https://www.uclouvain.be/fr/people/anne.rubbens
+    
+"Berg Thomsen":
+  - firstname: ["Daniel", "Berg Thomsen"]
+    url: https://bergthomsen.com/
+    
+"Naldi":
+  - firstname: ["Simone", "Naldi"]
+    url: https://www.unilim.fr/pages_perso/simone.naldi/
+    
+"Wang":
+  - firstname: ["Weijia", "Wang"]
+    url: https://weijia.wang/
+    
+"Safey El Din":
+  - firstname: ["Mohab", "Safey El Din"]
+    url: https://polsys.lip6.fr/~safey/
+
