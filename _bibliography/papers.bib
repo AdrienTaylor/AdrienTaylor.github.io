@@ -1,15 +1,111 @@
-%% 2024
+%% 2025
+
+
+@article{schaipp2025surprising,
+  title={The Surprising Agreement Between Convex Optimization Theory and Learning-Rate Scheduling for Large Model Training},
+  author={Schaipp, Fabian and H{\"a}gele, Alexander and Taylor, Adrien and Simsekli, Umut and Bach, Francis},
+  arxiv={2501.18965},
+  booktitle={International Conference on Machine Learning (ICML)},
+  abbr={conference},abbr2={4 - conference},
+  bibtex_show={true},
+  code={https://github.com/fabian-sp/lr-scheduling},
+  abstract={We show that learning-rate schedules for large model training behave surprisingly similar to a performance bound from non-smooth convex optimization theory. We provide a bound for the constant schedule with linear cooldown; in particular, the practical benefit of cooldown is reflected in the bound due to the absence of logarithmic terms. Further, we show that this surprisingly close match between optimization theory and practice can be exploited for learning-rate tuning: we achieve noticeable improvements for training 124M and 210M Llama-type models by (i) extending the schedule for continued training with optimal learning-rate, and (ii) transferring the optimal learning-rate across schedules.},
+  year={2025}
+}
+
+	
+@inproceedings{naldi2025solving,
+  title={Solving generic parametric linear matrix inequalities},
+  author={Naldi, Simone and Safey El Din, Mohab and Taylor, Adrien and Wang, Weijia}, 
+  arxiv={2503.01487},
+  booktitle={International Symposium on Symbolic and Algebraic Computation (ISSAC)},
+  abbr={conference},abbr2={4 - conference},
+  bibtex_show={true},
+  code={https://github.com/wegank/ParametricLMI},
+  abstract={},
+  year={2025}
+}
+
+@article{rubbens2025onepoint,
+  title={A constructive approach to strengthen algebraic descriptions of function and operator classes},
+  author={Rubbens, Anne and Hendrickx, Julien M. and Taylor, Adrien},
+  journal={arXiv:2504.14377},
+  abbr={preprint}, abbr2={1 - preprints},
+  year = {2025},
+  abstract={It is well known that functions (resp. operators) satisfying a property~$p$ on a subset $Q\subset \R^d$ cannot necessarily be extended to a function (resp. operator) satisfying~$p$ on the whole of~$\R^d$. Given $Q \subseteq \R^d$, this work considers the problem of obtaining necessary and ideally sufficient conditions to be satisfied by a function (resp. operator) on $Q$, ensuring the existence of an extension of this function (resp. operator) satisfying $p$ on $\R^d$.    More precisely, given some property $p$, we present a refinement procedure to obtain stronger necessary conditions to be imposed on $Q$. This procedure can be applied iteratively until the stronger conditions are also sufficient. We illustrate the procedure on a few examples, including the strengthening of existing descriptions for the classes of smooth functions satisfying a \L{}ojasiewicz condition, convex blockwise smooth functions, Lipschitz monotone operators, strongly monotone cocoercive operators, and uniformly convex functions. In most cases, these strengthened descriptions can be represented, or relaxed, to semi-definite constraints, which can be used to formulate tractable optimization problems on functions (resp. operators) within those classes.},
+  code={https://github.com/AnneRubbens/Constraints_Strengthening/},
+  arxiv={2504.14377},
+  bibtex_show={true}
+}
+@article{goujaud2025open,
+  title = {Open Problem: Two Riddles in Heavy-Ball Dynamics},
+  author = {Goujaud, Baptiste and Taylor, Adrien B. and Dieuleveut, Aymeric},
+  journal={arXiv:2502.19916},
+  abbr={preprint}, abbr2={1 - preprints},
+  year = {2025},
+  abstract={This short paper presents two open problems on the widely used Polyak's Heavy-Ball algorithm. The first problem is the method's ability to exactly accelerate in dimension one exactly. The second question regards the behavior of the method for parameters for which it seems that neither a Lyapunov nor a cycle exists. For both problems, we provide a detailed description of the problem and elements of an answer.},
+  arxiv={2506.05855},
+  bibtex_show={true}
+}
+
+@article{weibel2025optimised,
+  title = {Optimized projection-free algorithms for online learning: construction and worst-case analysis},
+  author = {Weibel, Julien and Gaillard, Pierre and Koolen, Wouter and Taylor, Adrien},
+  year = {2025},
+  journal={arXiv:2506.05855},
+  abbr={preprint}, abbr2={1 - preprints},
+  abstract={This work studies and develop projection-free algorithms for online learning with linear optimization oracles (a.k.a. Frank–Wolfe) for handling the constraint set. More precisely, this work (i) provides an improved (optimized) variant of an online Frank–Wolfe algorithm along with its conceptually simple potential-based proof, and (ii) shows how to leverage semidefinite programming to jointly design and analyze online Frank–Wolfe-type algorithms numerically in a variety of settings—that include the design of the variant (i). Based on the semidefinite technique, we conclude with strong numerical evidence suggesting that no pure online Frank–Wolfe algorithm within our model class can have a regret guarantee better than $O(T^{3/4})$ (T is the time horizon) without additional assumptions, that the current algorithms do not have optimal constants, that the algorithm benefits from similar anytime properties $O(t^{3/4})$ not requiring to know T in advance, and that multiple linear optimization rounds do not generally help to obtain better regret bounds.},
+  arxiv={2506.05855},
+  bibtex_show={true}
+}
+
+@article{thomsen2025optimised,
+  title = {Tight analyses of first-order methods with error feedback},
+  author = {Berg Thomsen, Daniel and Taylor, Adrien and Dieuleveut, Aymeric},
+  year = {2025},
+  journal={arXiv:2506.05271},
+  abbr={preprint}, abbr2={1 - preprints},
+  abstract={Communication between agents often constitutes a major computational bottleneck in distributed learning. One of the most common mitigation strategies is to compress the information exchanged, thereby reducing communication overhead. To counteract the degradation in convergence associated with compressed communication, error feedback schemes -- most notably EF and EF21 -- were introduced. In this work, we provide a tight analysis of both of these methods. Specifically, we find the Lyapunov function that yields the best possible convergence rate for each method -- with matching lower bounds. This principled approach yields sharp performance guarantees and enables a rigorous, apples-to-apples comparison between EF, EF21, and compressed gradient descent. Our analysis is carried out in a simplified yet representative setting, which allows for clean theoretical insights and fair comparison of the underlying mechanisms. },
+  code={https://github.com/DanielBergThomsen/error-feedback-tight},
+  arxiv={2506.05271},
+  bibtex_show={true}
+}
+
+
 @article{upadhyaya2023automated,
   title={Automated tight Lyapunov analysis for first-order methods},
   author={Upadhyaya, Manu and Banert, Sebastian and Taylor, Adrien B. and Giselsson, Pontus},
   journal={arXiv:2302.06713},
-  year={2024},
+  year={2025},
   abbr={journal},abbr2={3 - journals},
   abstract={We present a methodology for establishing the existence of quadratic Lyapunov inequalities for a wide range of first-order methods used to solve convex optimization problems. In particular, we consider i) classes of optimization problems of finite-sum form with (possibly strongly) convex and possibly smooth functional components, ii) first-order methods that can be written as a linear system on state-space form in feedback interconnection with the subdifferentials of the functional components of the objective function, and iii) quadratic Lyapunov inequalities that can be used to draw convergence conclusions. We provide a necessary and sufficient condition for the existence of a quadratic Lyapunov inequality that amounts to solving a small-sized semidefinite program. We showcase our methodology on several first-order methods that fit the framework. Most notably, our methodology allows us to significantly extend the region of parameter choices that allow for duality gap convergence in the Chambolle-Pock method when the linear operator is the identity mapping.},
   code={https://github.com/ManuUpadhyaya/tight_lyapunov_analysis},
   arxiv={2302.06713},
   bibtex_show={true},
-  journal={Mathematical Programming (to appear)}
+  journal={Mathematical Programming}
+}
+
+%% 2024
+@article{taylor2024towards,
+  title={Towards principled and systematic approaches to the analysis and design of optimization algorithms},
+  author={Taylor, Adrien B.},
+  journal={PSL Research University},
+  year={2024},
+  abbr={book}, abbr2={2 - books},
+  bibtex_show={true},
+  abstract={The goal of this thesis is to show how to derive in a completely automated way exact and global worst-case guarantees for first-order methods in convex optimization. To this end, we formulate a generic optimization problem looking for the worst-case scenarios. The worst-case computation problems, referred to as performance estimation problems (PEPs), are intrinsically infinite-dimensional optimization problems formulated over a given class of objective functions. To render those problems tractable, we develop (smooth and non-smooth) convex interpolation framework, which provides necessary and sufficient conditions to interpolate our objective functions. With this idea, we transform PEPs into solvable finite-dimensional semidefinite programs, from which one obtains worst-case guarantees and worst-case functions, along with the corresponding explicit proofs. PEPs already proved themselves very useful as a tool for developing convergence analyses of first-order optimization methods. Among others, PEPs allow obtaining exact guarantees for gradient methods, along with their inexact, projected, proximal, conditional, decentralized and accelerated versions.},
+}
+
+@article{bambade2023proxqp,
+  title={PROXQP: an Efficient and Versatile Quadratic Programming Solver for Real-Time Robotics Applications and Beyond},
+  author={Bambade, Antoine and Schramm, Fabian and El Kazdadi, Sarah and Caron, St{\'e}phane and Taylor, Adrien B. and Carpentier, Justin},
+  year={2025},
+  abbr={journal},abbr2={3 - journals},
+  abstract={Convex Quadratic programming (QP) has become a core component in the modern engineering toolkit, particularly in robotics, where QP problems are legions, ranging from real-time whole-body controllers to planning and estimation algorithms. Many of those QPs need to be solved at high frequency. Meeting timing requirements requires taking advantage of as many structural properties as possible for the problem at hand. For instance, it is generally crucial to resort to warm-starting to exploit the resemblance of consecutive control iterations. While a large range of off-the-shelf QP solvers is available, only a few are suited to exploit problem structure and warm-starting capacities adequately. In this work, we propose the PROXQP algorithm, a new and efficient QP solver that exploits QP structures by leveraging primal-dual augmented Lagrangian techniques. For convex QPs, PROXQP features a global convergence guarantee to the closest feasible QP, an essential property for safe closedloop control. We illustrate its practical performance on various standard robotic and control experiments, including a real-world closed-loop model predictive control application. While originally tailored for robotics applications, we show that PROXQP also performs at the level of state of the art on generic QP problems, making PROXQP suitable for use as an off-the-shelf solver for regular applications beyond robotics.},
+  code={https://github.com/Simple-Robotics/proxsuite},
+  bibtex_show={true},
+  html={https://inria.hal.science/hal-04198663/},
+  journal={Transactions on Robotics (to appear)}
 }
 @article{goujaud2022quadratic,
 	title={Quadratic minimization: from conjugate gradient to an adaptive Polyak’s momentum method with Polyak step-sizes},
@@ -28,13 +124,12 @@
 	title={PEPit: computer-assisted worst-case analyses of first-order optimization methods in Python},
 	author={Goujaud, Baptiste and Moucer, C{\'e}line and Glineur, Fran{\c{c}}ois and Hendrickx, Julien M. and Taylor, Adrien B. and Dieuleveut, Aymeric},
 	year={2024},
-	journal={arXiv:2201.04040},
 	abbr={journal},abbr2={3 - journals},
 	abstract={PEPit is a python package aiming at simplifying the access to worst-case analyses of a large family of first-order optimization methods possibly involving gradient, projection, proximal, or linear optimization oracles, along with their approximate, or Bregman variants. In short, PEPit is a package enabling computer-assisted worst-case analyses of first-order optimization methods. The key underlying idea is to cast the problem of performing a worst-case analysis, often referred to as a performance estimation problem (PEP), as a semidefinite program (SDP) which can be solved numerically. For doing that, the package users are only required to write first-order methods nearly as they would have implemented them. The package then takes care of the SDP modelling parts, and the worst-case analysis is performed numerically via a standard solver. },
 	code={https://github.com/PerformanceEstimation/PEPit},
 	arxiv={2201.04040},
 	bibtex_show={true},
-  	journal={Mathematical Programming Computation (to appear)}
+  	journal={Mathematical Programming Computation}
 }
 @article{gupta2023nonlinear,
   	title={Nonlinear conjugate gradient methods: worst-case convergence rates via computer-assisted analyses},
@@ -45,7 +140,7 @@
 	code={https://github.com/Shuvomoy/NCG-PEP-code},
 	arxiv={2301.01530},
 	bibtex_show={true},
-  	journal={Mathematical Programming (to appear)}
+  	journal={Mathematical Programming}
 }
 @inproceedings{bambade2023qplayer,
   title={QPLayer: efficient differentiation of convex quadratic optimization},
@@ -67,7 +162,7 @@
 @inproceedings{goujaud2023fundamental,
   title={On Fundamental Proof Structures in First-Order Optimization},
   author={Goujaud, Baptiste and Dieuleveut, Aymeric and Taylor, Adrien B.},
-  booktitle={Proceedings of the 62nd Conference on Decision and Control (CDC)},
+  booktitle={Conference on Decision and Control (CDC)},
   pages={3023--3030},
   year={2023},
   organization={IEEE},
@@ -129,16 +224,7 @@ guarantees for first-order optimization methods.}
 	pdf={https://arxiv.org/pdf/2303.10503.pdf}
 }
 
-@article{bambade2023proxqp,
-  title={PROXQP: an Efficient and Versatile Quadratic Programming Solver for Real-Time Robotics Applications and Beyond},
-  author={Bambade, Antoine and Schramm, Fabian and El Kazdadi, Sarah and Caron, St{\'e}phane and Taylor, Adrien B. and Carpentier, Justin},
-  year={2023},
-  abbr={preprint},abbr2={1 - preprints},
-  abstract={Convex Quadratic programming (QP) has become a core component in the modern engineering toolkit, particularly in robotics, where QP problems are legions, ranging from real-time whole-body controllers to planning and estimation algorithms. Many of those QPs need to be solved at high frequency. Meeting timing requirements requires taking advantage of as many structural properties as possible for the problem at hand. For instance, it is generally crucial to resort to warm-starting to exploit the resemblance of consecutive control iterations. While a large range of off-the-shelf QP solvers is available, only a few are suited to exploit problem structure and warm-starting capacities adequately. In this work, we propose the PROXQP algorithm, a new and efficient QP solver that exploits QP structures by leveraging primal-dual augmented Lagrangian techniques. For convex QPs, PROXQP features a global convergence guarantee to the closest feasible QP, an essential property for safe closedloop control. We illustrate its practical performance on various standard robotic and control experiments, including a real-world closed-loop model predictive control application. While originally tailored for robotics applications, we show that PROXQP also performs at the level of state of the art on generic QP problems, making PROXQP suitable for use as an off-the-shelf solver for regular applications beyond robotics.},
-  code={https://github.com/Simple-Robotics/proxsuite},
-  bibtex_show={true},
-  html={https://inria.hal.science/hal-04198663/}
-}
+
 @article{goujaud2023provable,
   	title={Provable non-accelerations of the heavy-ball method},
   	author={Goujaud, Baptiste and Taylor, Adrien B. and Dieuleveut, Aymeric},
@@ -233,7 +319,7 @@ abbr2={3 - journals}
 	year={2023},
 	pdf={https://arxiv.org/pdf/2210.13831.pdf},
 	abbr={conference},abbr2={4 - conference},
-	booktitle={Proceedings of the 40th International Conference on Machine Learning (ICML)},	
+	booktitle={International Conference on Machine Learning (ICML)},	
 	code={https://github.com/eduardgorbunov/Proximal_Point_and_Extragradient_based_methods_negative_comonotonicity},
 	abstract={Algorithms for min-max optimization and variational inequalities are often studied under monotonicity assumptions. Motivated by non-monotone machine learning applications, we follow the line of works [Diakonikolas et al., 2021, Lee and Kim, 2021, Pethick et al., 2022, Böhm, 2022] aiming at going beyond monotonicity by considering the weaker negative comonotonicity assumption. In particular, we provide tight complexity analyses for the Proximal Point, Extragradient, and Optimistic Gradient methods in this setup, closing some questions on their working guarantees beyond monotonicity.}
 }
@@ -296,7 +382,7 @@ abbr2={3 - journals}
 @inproceedings{goujaud2022super,
 	title={Super-Acceleration with Cyclical Step-sizes},
 	author={Goujaud, Baptiste and Scieur, Damien and Dieuleveut, Aymeric and Taylor, Adrien B. and Pedregosa, Fabian},
-	booktitle={Proceedings of the 25th International Conference on Artificial Intelligence and Statistics (AISTATS)},
+	booktitle={International Conference on Artificial Intelligence and Statistics (AISTATS)},
 	year={2022},
 	abbr={conference},abbr2={4 - conference},
 	arxiv={2106.09687},
@@ -443,7 +529,7 @@ html={https://www.nowpublishers.com/article/Details/OPT-036}
 @inproceedings{barre2020complexity,
 title={Complexity guarantees for {P}olyak steps with momentum},
 author={Barré, Mathieu and Taylor, Adrien B. and d’Aspremont, Alexandre},
-booktitle={Proceedings of the 33rd Conference on Learning Theory (COLT)},
+booktitle={Conference on Learning Theory (COLT)},
 pages={452--478},
 year={2020},
 abbr={conference},abbr2={4 - conference},
@@ -461,7 +547,7 @@ bibtex_show={true}
 	title = 	 {Stochastic first-order methods: non-asymptotic and computer-aided analyses via potential functions},
 	author =       {Taylor, Adrien B. and Bach, Francis},
 	year = 	 {2019},
-	booktitle = 	 {Proceedings of the 32nd Conference on Learning Theory (COLT)},
+	booktitle = 	 {Conference on Learning Theory (COLT)},
 	abbr={conference},abbr2={4 - conference},
 	abstract={We provide a novel computer-assisted technique for systematically analyzing first-order methods for optimization. In contrast with previous works, the approach is particularly suited for handling sublinear convergence rates and stochastic oracles. The technique relies on semidefinite programming and potential functions. It allows simultaneously obtaining worst-case guarantees on the behavior of those algorithms, and assisting in choosing appropriate parameters for tuning their worst-case performances. The technique also benefits from comfortable tightness guarantees, meaning that unsatisfactory results can be improved only by changing the setting. We use the approach for analyzing deterministic and stochastic first-order methods under different assumptions on the nature of the stochastic noise. Among others, we treat unstructured noise with bounded variance, different noise models arising in over-parametrized expectation minimization problems, and randomized block-coordinate descent schemes.},
 	html={http://proceedings.mlr.press/v99/taylor19a.html},
@@ -473,7 +559,7 @@ bibtex_show={true}
 @inproceedings{taylor2018lyapunov,
 	title={Lyapunov functions for first-order methods: Tight automated convergence guarantees},
 	author={Taylor, Adrien B. and Van Scoy, Bryan and Lessard, Laurent},
-	booktitle={Proceedings of the 35th International Conference on Machine Learning (ICML)},
+	booktitle={International Conference on Machine Learning (ICML)},
 	year={2018},
 	abbr={conference},abbr2={4 - conference},
 	abstract={We present a novel way of generating Lyapunov functions for proving linear convergence rates of first-order optimization methods. Our approach provably obtains the fastest linear convergence rate that can be verified by a quadratic Lyapunov function (with given states), and only relies on solving a small-sized semidefinite program. Our approach combines the advantages of performance estimation problems (PEP, due to Drori and Teboulle (2014)) and integral quadratic constraints (IQC, due to Lessard et al. (2016)), and relies on convex interpolation (due to Taylor et al. (2017c;b)).},
@@ -523,7 +609,7 @@ bibtex_show={true}
 @inproceedings{taylor2017performance,
 	title={Performance estimation toolbox ({PESTO}): automated worst-case analysis of first-order optimization methods},
 	author={Taylor, Adrien B. and Hendrickx, Julien M. and Glineur, Fran{\c{c}}ois},
-	booktitle={Proceedings of the 56th Conference on Decision and Control (CDC)},
+	booktitle={Conference on Decision and Control (CDC)},
 	year={2017},
 	abbr={conference},abbr2={4 - conference},
 	abstract={We present a MATLAB toolbox that automatically computes tight worst-case performance guarantees for a broad class of first-order methods for convex optimization. The class of methods includes those performing explicit, projected, proximal, conditional and inexact (sub)gradient steps. The toolbox relies on the performance estimation (PE) framework, which recently emerged through works of Drori and Teboulle and the authors. The PE approach is a very systematic
