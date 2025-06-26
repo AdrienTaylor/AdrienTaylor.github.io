@@ -27,22 +27,22 @@ My research currently focuses on optimization (mostly first-order) and numerical
 
 **tutorial & slides ---** selected sets of slides can be found [here](/tutorials), together with references to tutorials to accelerated first-order methods and principled (and computer-assisted) worst-case analyses.
 
-**team--** I am very fortunate to work in the [SIERRA](https://www.di.ens.fr/sierra/) team. My current main PhD and Postdoc collaborators:
-+ [Roland Andrews](https://www.linkedin.com/in/roland-andrews/) (PhD student at ENS Paris, co-supervised with Justin Carpentier)
-+ [Daniel Berg Thomsen](https://bergthomsen.com/) (PhD student at ENS Paris, co-supervised with Aymeric Dieuleveut)
-+ [Si Yi Meng](https://www.cs.cornell.edu/~siyimeng/) (visiting PhD student, Cornell)
-+ [Fabian Schaipp](https://fabian-sp.github.io/) (postdoc at Inria Paris, co-supervised with Umut Simsleki and Francis Bach)
-+ [Weijia Wang](https://weijia.wang/) (PhD student at Sorbonne Université, co-supervised with Mohab Safey El Din and Simone Naldi)
-+ [Julien Weibel](https://www.normalesup.org/~jweibel/) (postdoc at Inria Paris, co-supervised with Pierre Gaillard and Wouter Koolen)
+**team ---** I am very fortunate to work in the [SIERRA](https://www.di.ens.fr/sierra/) team with great collaborators, among which:
++ [Roland Andrews](https://www.linkedin.com/in/roland-andrews/): PhD student at ENS Paris, co-advised with [Justin Carpentier](https://jcarpent.github.io/),
++ [Daniel Berg Thomsen](https://bergthomsen.com/): PhD student at ENS Paris, co-advised with [Aymeric Dieuleveut](http://www.cmap.polytechnique.fr/~aymeric.dieuleveut/)
++ [Si Yi Meng](https://www.cs.cornell.edu/~siyimeng/): visiting PhD student from Cornell, co-advised with [Aymeric Dieuleveut](http://www.cmap.polytechnique.fr/~aymeric.dieuleveut/) and [Baptiste Goujaud](https://bgoujaud.github.io/),
++ [Fabian Schaipp](https://fabian-sp.github.io/): postdoc at Inria Paris, co-advised with [Umut Simsleki](https://www.di.ens.fr/umut.simsekli/) and [Francis Bach](https://www.di.ens.fr/~fbach/),
++ [Weijia Wang](https://weijia.wang/): PhD student at Sorbonne Université, co-advised with [Mohab Safey El Din](https://polsys.lip6.fr/~safey/) and [Simone Naldi](https://www.unilim.fr/pages_perso/simone.naldi/),
++ [Julien Weibel](https://www.normalesup.org/~jweibel/): postdoc at Inria Paris, co-advised with [Pierre Gaillard](http://pierre.gaillard.me/) and [Wouter Koolen](https://wouterkoolen.info/).
 
 Past PhD students:
-+ [Antoine Bambade](https://bambade.github.io/) (PhD student at ENS Paris, co-supervised with Jean Ponce & Justin Carpentier)
-+ [Baptiste Goujaud](https://bgoujaud.github.io/) (PhD student at Ecole Polytechnique, co-supervised with Aymeric Dieuleveut)
-+ [Céline Moucer](https://cmoucer.github.io/) (PhD student at ENS Paris, co-supervised with Francis Bach)
++ [Antoine Bambade](https://bambade.github.io/): PhD student at ENS Paris, co-advised with Jean Ponce & [Justin Carpentier](https://jcarpent.github.io/),
++ [Baptiste Goujaud](https://bgoujaud.github.io/): PhD student at Ecole Polytechnique, co-advised with [Aymeric Dieuleveut](http://www.cmap.polytechnique.fr/~aymeric.dieuleveut/),
++ [Céline Moucer](https://cmoucer.github.io/): PhD student at ENS Paris, co-advised with [Francis Bach](https://www.di.ens.fr/~fbach/).
 
 Past PhD visitors/interns:
-+ [Shuvomoy Das Gupta](https://shuvomoy.github.io/) (PhD student, MIT)
-+ [Anne Rubbens](https://www.uclouvain.be/fr/people/anne.rubbens) (PhD student, UCLouvain)
-+ [Manu Upadhyaya](https://manuupadhyaya.github.io/) (PhD student, Lund University)
++ [Shuvomoy Das Gupta](https://shuvomoy.github.io/): PhD student from MIT,
++ [Anne Rubbens](https://www.uclouvain.be/fr/people/anne.rubbens): PhD student from UCLouvain,
++ [Manu Upadhyaya](https://manuupadhyaya.github.io/): PhD student from Lund University.
 
-I also worked closely with [Mathieu Barré](https://mathbarre.github.io/), [Radu-Dragomir Alexandru](https://radualexandrudragomir.github.io/), and [Benjamin Dubois-Taine](https://bpauld.github.io/).
+I was also fortunate to work closely with [Mathieu Barré](https://mathbarre.github.io/), [Radu-Dragomir Alexandru](https://radualexandrudragomir.github.io/), and [Benjamin Dubois-Taine](https://bpauld.github.io/).
