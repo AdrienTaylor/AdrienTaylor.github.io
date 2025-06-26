@@ -36,7 +36,7 @@ My research currently focuses on optimization (mostly first-order) and numerical
 + [Julien Weibel](https://www.normalesup.org/~jweibel/): postdoc at Inria Paris, co-advised with [Pierre Gaillard](http://pierre.gaillard.me/) and [Wouter Koolen](https://wouterkoolen.info/).
 
 Past PhD students:
-+ [Antoine Bambade](https://bambade.github.io/): PhD student at ENS Paris, co-advised with Jean Ponce & [Justin Carpentier](https://jcarpent.github.io/),
++ [Antoine Bambade](https://bambade.github.io/): PhD student at ENS Paris, co-advised with [Jean Ponce](https://www.di.ens.fr/~ponce/) and [Justin Carpentier](https://jcarpent.github.io/),
 + [Baptiste Goujaud](https://bgoujaud.github.io/): PhD student at Ecole Polytechnique, co-advised with [Aymeric Dieuleveut](http://www.cmap.polytechnique.fr/~aymeric.dieuleveut/),
 + [Céline Moucer](https://cmoucer.github.io/): PhD student at ENS Paris, co-advised with [Francis Bach](https://www.di.ens.fr/~fbach/).
 
