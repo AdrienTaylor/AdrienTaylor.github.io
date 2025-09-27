@@ -47,6 +47,19 @@ This study leverages the classical relationship between ALMs and the proximal-po
 	arxiv={2307.11291},
 	bibtex_show={true}
 }
+@article{moucer2025geometry,
+  title={Geometry-dependent matching pursuit: a transition phase for convergence on linear regression and LASSO},
+  author={Moucer, C{\'e}line and Taylor, Adrien B. and Bach, Francis},
+  year={2025},
+  pdf={https://arxiv.org/abs/2301.01530},
+  abbr={journal},
+  abbr2={3 - journals},
+  journal={Journal of Machine Learning Research (JMLR)},
+  abstract={Greedy first-order methods, such as coordinate descent with Gauss-Southwell rule or matching pursuit, have become popular in optimization due to their natural tendency to propose sparse solutions and their refined convergence guarantees. In this work, we propose a principled approach to generating (regularized) matching pursuit algorithms adapted to the geometry of the problem at hand, as well as their convergence guarantees. Building on these results, we derive approximate convergence guarantees and describe a transition phenomenon in the convergence of (regularized) matching pursuit from underparametrized to overparametrized models.},
+  code={https://github.com/CMoucer/Geometry_Dependent_Matching_Pursuit},
+  arxiv={2301.01530},
+  bibtex_show={true}
+}
 
 @article{schaipp2025surprising,
   title={The Surprising Agreement Between Convex Optimization Theory and Learning-Rate Scheduling for Large Model Training},
@@ -96,12 +109,13 @@ This study leverages the classical relationship between ALMs and the proximal-po
   bibtex_show={true}
 }
 
-@article{thomsen2025optimised,
+@inproceedings{thomsen2025optimised,
   title = {Tight analyses of first-order methods with error feedback},
   author = {Berg Thomsen, Daniel and Taylor, Adrien B. and Dieuleveut, Aymeric},
   year = {2025},
-  journal={arXiv:2506.05271},
-  abbr={preprint}, abbr2={1 - preprints},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  abbr={conference},abbr2={4 - conference},
+  pdf={https://arxiv.org/abs/2506.05271},
   abstract={Communication between agents often constitutes a major computational bottleneck in distributed learning. One of the most common mitigation strategies is to compress the information exchanged, thereby reducing communication overhead. To counteract the degradation in convergence associated with compressed communication, error feedback schemes -- most notably EF and EF21 -- were introduced. In this work, we provide a tight analysis of both of these methods. Specifically, we find the Lyapunov function that yields the best possible convergence rate for each method -- with matching lower bounds. This principled approach yields sharp performance guarantees and enables a rigorous, apples-to-apples comparison between EF, EF21, and compressed gradient descent. Our analysis is carried out in a simplified yet representative setting, which allows for clean theoretical insights and fair comparison of the underlying mechanisms. },
   code={https://github.com/DanielBergThomsen/error-feedback-tight},
   arxiv={2506.05271},
@@ -221,20 +235,7 @@ guarantees for first-order optimization methods.}
 }
 
 
-
-@article{moucer2024geometry,
-  title={Geometry-dependent matching pursuit: a transition phase for convergence on linear regression and LASSO},
-  author={Moucer, C{\'e}line and Taylor, Adrien B. and Bach, Francis},
-  year={2024},
-  journal={arXiv:2301.01530},
-  abbr={preprint}, abbr2={1 - preprints},
-  abstract={Greedy first-order methods, such as coordinate descent with Gauss-Southwell rule or matching pursuit, have become popular in optimization due to their natural tendency to propose sparse solutions and their refined convergence guarantees. In this work, we propose a principled approach to generating (regularized) matching pursuit algorithms adapted to the geometry of the problem at hand, as well as their convergence guarantees. Building on these results, we derive approximate convergence guarantees and describe a transition phenomenon in the convergence of (regularized) matching pursuit from underparametrized to overparametrized models.},
-  code={https://github.com/CMoucer/Geometry_Dependent_Matching_Pursuit},
-  arxiv={2301.01530},
-  bibtex_show={true}
-}
-
-@article{moucer2024geometry,
+@article{moucer2024constructive,
   title={Constructive approaches to concentration inequalities with independent random variables},
   author={Moucer, C{\'e}line and Taylor, Adrien B. and Bach, Francis},
   year={2024},

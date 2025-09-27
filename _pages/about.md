@@ -29,7 +29,8 @@ My research currently focuses on optimization (mostly first-order) and numerical
 
 **team ---** I am very fortunate to work in the [SIERRA](https://www.di.ens.fr/sierra/) team with great collaborators, among which:
 + [Roland Andrews](https://www.linkedin.com/in/roland-andrews/): PhD student at ENS Paris, co-advised with [Justin Carpentier](https://jcarpent.github.io/),
-+ [Daniel Berg Thomsen](https://bergthomsen.com/): PhD student at ENS Paris, co-advised with [Aymeric Dieuleveut](http://www.cmap.polytechnique.fr/~aymeric.dieuleveut/)
++ [Daniel Berg Thomsen](https://bergthomsen.com/): PhD student at ENS Paris, co-advised with [Aymeric Dieuleveut](http://www.cmap.polytechnique.fr/~aymeric.dieuleveut/),
++ [Lucas Haubert](https://www.linkedin.com/in/lucas-haubert-b668a421a/): numerical optimization engineer, working with (among others) [Justin Carpentier](https://jcarpent.github.io/),
 + [Si Yi Meng](https://www.cs.cornell.edu/~siyimeng/): visiting PhD student from Cornell, co-advised with [Aymeric Dieuleveut](http://www.cmap.polytechnique.fr/~aymeric.dieuleveut/) and [Baptiste Goujaud](https://bgoujaud.github.io/),
 + [Fabian Schaipp](https://fabian-sp.github.io/): postdoc at Inria Paris, co-advised with [Umut Simsleki](https://www.di.ens.fr/umut.simsekli/) and [Francis Bach](https://www.di.ens.fr/~fbach/),
 + [Weijia Wang](https://weijia.wang/): PhD student at Sorbonne Université, co-advised with [Mohab Safey El Din](https://polsys.lip6.fr/~safey/) and [Simone Naldi](https://www.unilim.fr/pages_perso/simone.naldi/),
