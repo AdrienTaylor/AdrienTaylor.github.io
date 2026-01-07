@@ -31,7 +31,6 @@ My research currently focuses on optimization (mostly first-order) and numerical
 + [Roland Andrews](https://www.linkedin.com/in/roland-andrews/): PhD student at ENS Paris, co-advised with [Justin Carpentier](https://jcarpent.github.io/),
 + [Daniel Berg Thomsen](https://bergthomsen.com/): PhD student at ENS Paris, co-advised with [Aymeric Dieuleveut](http://www.cmap.polytechnique.fr/~aymeric.dieuleveut/),
 + [Lucas Haubert](https://www.linkedin.com/in/lucas-haubert-b668a421a/): numerical optimization engineer, working with (among others) [Justin Carpentier](https://jcarpent.github.io/),
-+ [Si Yi Meng](https://www.cs.cornell.edu/~siyimeng/): visiting PhD student from Cornell, co-advised with [Aymeric Dieuleveut](http://www.cmap.polytechnique.fr/~aymeric.dieuleveut/) and [Baptiste Goujaud](https://bgoujaud.github.io/),
 + [Fabian Schaipp](https://fabian-sp.github.io/): postdoc at Inria Paris, co-advised with [Umut Simsleki](https://www.di.ens.fr/umut.simsekli/) and [Francis Bach](https://www.di.ens.fr/~fbach/),
 + [Weijia Wang](https://weijia.wang/): PhD student at Sorbonne Université, co-advised with [Mohab Safey El Din](https://polsys.lip6.fr/~safey/) and [Simone Naldi](https://www.unilim.fr/pages_perso/simone.naldi/),
 + [Julien Weibel](https://www.normalesup.org/~jweibel/): postdoc at Inria Paris, co-advised with [Pierre Gaillard](http://pierre.gaillard.me/) and [Wouter Koolen](https://wouterkoolen.info/).
@@ -44,6 +43,7 @@ Past PhD students:
 Past PhD visitors/interns:
 + [Shuvomoy Das Gupta](https://shuvomoy.github.io/): PhD student from MIT,
 + [Anne Rubbens](https://www.uclouvain.be/fr/people/anne.rubbens): PhD student from UCLouvain,
-+ [Manu Upadhyaya](https://manuupadhyaya.github.io/): PhD student from Lund University.
++ [Manu Upadhyaya](https://manuupadhyaya.github.io/): PhD student from Lund University,
++ [Si Yi Meng](https://www.cs.cornell.edu/~siyimeng/): PhD student from Cornell University (co-advised with [Aymeric Dieuleveut](http://www.cmap.polytechnique.fr/~aymeric.dieuleveut/) and [Baptiste Goujaud](https://bgoujaud.github.io/)).
 
 I was also fortunate to work closely with [Mathieu Barré](https://mathbarre.github.io/), [Radu-Dragomir Alexandru](https://radualexandrudragomir.github.io/), and [Benjamin Dubois-Taine](https://bpauld.github.io/).
