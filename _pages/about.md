@@ -32,6 +32,8 @@ My research currently focuses on optimization (mostly first-order) and numerical
 + [Daniel Berg Thomsen](https://bergthomsen.com/): PhD student at ENS Paris, co-advised with [Aymeric Dieuleveut](http://www.cmap.polytechnique.fr/~aymeric.dieuleveut/),
 + [Lucas Haubert](https://www.linkedin.com/in/lucas-haubert-b668a421a/): numerical optimization engineer, working with (among others) [Justin Carpentier](https://jcarpent.github.io/),
 + [Fabian Schaipp](https://fabian-sp.github.io/): postdoc at Inria Paris, co-advised with [Umut Simsleki](https://www.di.ens.fr/umut.simsekli/) and [Francis Bach](https://www.di.ens.fr/~fbach/),
++ [Manu Upadhyaya](https://manuupadhyaya.github.io/): postdoc at Inria Paris, co-advised with [Aymeric Dieuleveut](http://www.cmap.polytechnique.fr/~aymeric.dieuleveut/) and [Baptiste Goujaud](https://bgoujaud.github.io/),
++ [Pierre Vernimmen](https://www.uclouvain.be/fr/people/pierre.vernimmen): PhD student visiting from UCLouvain (co-advised with [Baptiste Goujaud](https://bgoujaud.github.io/)),
 + [Weijia Wang](https://weijia.wang/): PhD student at Sorbonne Université, co-advised with [Mohab Safey El Din](https://polsys.lip6.fr/~safey/) and [Simone Naldi](https://www.unilim.fr/pages_perso/simone.naldi/),
 + [Julien Weibel](https://www.normalesup.org/~jweibel/): postdoc at Inria Paris, co-advised with [Pierre Gaillard](http://pierre.gaillard.me/) and [Wouter Koolen](https://wouterkoolen.info/).
 
