@@ -205,4 +205,8 @@
 "Andrews":
   - firstname: ["Roland", "Andrews"]
     url: https://www.linkedin.com/in/roland-andrews/
+    
+"Gower":
+  - firstname: ["Robert M.", "Robert", "Gower"]
+    url: https://gowerrobert.github.io/
 
