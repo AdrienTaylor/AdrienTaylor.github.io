@@ -11,16 +11,6 @@
   bibtex_show={true}
 }
 
-@article{weibel2025optimised,
-  title = {Optimized projection-free algorithms for online learning: construction and worst-case analysis},
-  author = {Weibel, Julien and Gaillard, Pierre and Koolen, Wouter and Taylor, Adrien B.},
-  booktitle={International Conference on Artificial Intelligence and Statistics (AISTATS)},
-  year={2026},
-  abbr={conference},abbr2={4 - conference},
-  abstract={This work studies and develop projection-free algorithms for online learning with linear optimization oracles (a.k.a. Frank–Wolfe) for handling the constraint set. More precisely, this work (i) provides an improved (optimized) variant of an online Frank–Wolfe algorithm along with its conceptually simple potential-based proof, and (ii) shows how to leverage semidefinite programming to jointly design and analyze online Frank–Wolfe-type algorithms numerically in a variety of settings—that include the design of the variant (i). Based on the semidefinite technique, we conclude with strong numerical evidence suggesting that no pure online Frank–Wolfe algorithm within our model class can have a regret guarantee better than $O(T^{3/4})$ (T is the time horizon) without additional assumptions, that the current algorithms do not have optimal constants, that the algorithm benefits from similar anytime properties $O(t^{3/4})$ not requiring to know T in advance, and that multiple linear optimization rounds do not generally help to obtain better regret bounds.},
-  arxiv={2506.05855},
-  bibtex_show={true}
-}
 
 @article{rubbens2025onepoint,
   title={A constructive approach to strengthen algebraic descriptions of function and operator classes},
@@ -96,16 +86,27 @@ This study leverages the classical relationship between ALMs and the proximal-po
   bibtex_show={true}
 }
 
-@article{schaipp2025surprising,
+@inproceedings{weibel2025optimised,
+  title = {Optimized projection-free algorithms for online learning: construction and worst-case analysis},
+  author = {Weibel, Julien and Gaillard, Pierre and Koolen, Wouter and Taylor, Adrien B.},
+  arxiv={2506.05855},
+  booktitle={International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  abbr={conference},abbr2={4 - conference},
+  bibtex_show={true},
+  abstract={},
+  year={2026}
+}
+
+@inproceedings{schaipp2025surprising,
   title={The Surprising Agreement Between Convex Optimization Theory and Learning-Rate Scheduling for Large Model Training},
   author={Schaipp, Fabian and H{\"a}gele, Alexander and Taylor, Adrien B. and Simsekli, Umut and Bach, Francis},
+  arxiv={2501.18965},
   booktitle={International Conference on Machine Learning (ICML)},
   abbr={conference},abbr2={4 - conference},
-  abstract={We show that learning-rate schedules for large model training behave surprisingly similar to a performance bound from non-smooth convex optimization theory. We provide a bound for the constant schedule with linear cooldown; in particular, the practical benefit of cooldown is reflected in the bound due to the absence of logarithmic terms. Further, we show that this surprisingly close match between optimization theory and practice can be exploited for learning-rate tuning: we achieve noticeable improvements for training 124M and 210M Llama-type models by (i) extending the schedule for continued training with optimal learning-rate, and (ii) transferring the optimal learning-rate across schedules.},
-  year={2025},
-  arxiv={2501.18965},
   bibtex_show={true},
-  code={https://github.com/fabian-sp/lr-scheduling}
+  code={https://github.com/fabian-sp/lr-scheduling},
+  abstract={We show that learning-rate schedules for large model training behave surprisingly similar to a performance bound from non-smooth convex optimization theory. We provide a bound for the constant schedule with linear cooldown; in particular, the practical benefit of cooldown is reflected in the bound due to the absence of logarithmic terms. Further, we show that this surprisingly close match between optimization theory and practice can be exploited for learning-rate tuning: we achieve noticeable improvements for training 124M and 210M Llama-type models by (i) extending the schedule for continued training with optimal learning-rate, and (ii) transferring the optimal learning-rate across schedules.},
+  year={2025}
 }
 
 	
