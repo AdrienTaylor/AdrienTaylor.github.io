@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Objective and Barrier Construction</title>
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<style>
+body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#fff;color:#111}.page{max-width:1500px;margin:0 auto;padding:22px 28px 30px}.controls{display:flex;gap:36px;align-items:center;flex-wrap:wrap;margin-bottom:18px;padding:14px 18px;border:1px solid #ddd;border-radius:12px;background:#fafafa}.control-block{min-width:310px}.control-row{display:flex;align-items:center;gap:12px}label{font-weight:600;min-width:42px}input[type=range]{width:230px}.value{font-variant-numeric:tabular-nums;min-width:70px;display:inline-block}.plots{display:grid;grid-template-columns:1fr 1fr;gap:18px}.plot-card{border:1px solid #ddd;border-radius:12px;padding:8px;background:#fff}.plot-title{text-align:center;font-weight:600;margin:4px 0 2px}.plot{width:100%;height:680px}@media(max-width:1000px){.plots{grid-template-columns:1fr}.plot{height:600px}}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="controls">
+    <div class="control-block"><div class="control-row"><label for="cSlider">c</label><input id="cSlider" type="range" min="0.05" max="0.99" step="0.01" value="0.99" /><span id="cValue" class="value">0.99</span></div></div>
+    <div class="control-block"><div class="control-row"><label for="kSlider">k</label><input id="kSlider" type="range" min="1" max="30" step="1" value="8" /><span id="kValue" class="value">8</span></div></div>
+  </div>
+  <div class="plots">
+    <div class="plot-card"><div class="plot-title">(a) Objective f(x)</div><div id="objectivePlot" class="plot"></div></div>
+    <div class="plot-card"><div class="plot-title">(b) Barrier h(x) = -log(-phi(x))</div><div id="barrierPlot" class="plot"></div></div>
+  </div>
+</div>
+<script>
+"use strict";
+const objectiveDiv=document.getElementById("objectivePlot"),barrierDiv=document.getElementById("barrierPlot"),cSlider=document.getElementById("cSlider"),kSlider=document.getElementById("kSlider"),cValue=document.getElementById("cValue"),kValue=document.getElementById("kValue");
+let isSyncingCamera=false;
+let sharedCamera={eye:{x:-1.55,y:-1.10,z:0.28},up:{x:0,y:0,z:1},center:{x:0,y:0,z:0}};
+const gridN=100;
+function linspace(a,b,n){if(n===1)return[a];const out=[],s=(b-a)/(n-1);for(let i=0;i<n;i++)out.push(a+i*s);return out}
+function percentile(arr,p){const clean=arr.filter(Number.isFinite).sort((a,b)=>a-b);if(!clean.length)return NaN;const pos=(p/100)*(clean.length-1),lo=Math.floor(pos),hi=Math.ceil(pos);if(lo===hi)return clean[lo];const t=pos-lo;return clean[lo]*(1-t)+clean[hi]*t}
+function minFinite2D(A){let m=Infinity;for(const r of A)for(const v of r)if(Number.isFinite(v)&&v<m)m=v;return m}
+function maxFinite2D(A){let m=-Infinity;for(const r of A)for(const v of r)if(Number.isFinite(v)&&v>m)m=v;return m}
+function buildConstruction(k,c){
+  const gamma=Array(k+1).fill(0);
+  for(let i=1;i<k;i++)gamma[i]=(Math.sqrt(i+1)-Math.sqrt(i))*(1/Math.sqrt(i)-1/Math.sqrt(i+1));
+  let B=1;for(let i=1;i<k;i++)B+=Math.pow(Math.sqrt(i+1)-Math.sqrt(i),2);
+  const fval=Array(k+1).fill(0);fval[k]=B/k;
+  for(let i=k-1;i>=1;i--)fval[i]=fval[i+1]+gamma[i];
+  const d=Array(k+1).fill(0);d[k]=-1;
+  for(let i=k;i>=2;i--)d[i-1]=d[i]-(1-Math.sqrt((i-1)/i))+fval[i];
+  const x=Array.from({length:k+1},()=>[0,0]),sh=Array.from({length:k+1},()=>[0,0]),sf=Array.from({length:k+1},()=>[0,0]);
+  for(let i=1;i<=k;i++){x[i]=[1,1/Math.sqrt(i)];sh[i]=[d[i]+1,-Math.sqrt(i)];sf[i]=[sh[i-1][0]-sh[i][0],sh[i-1][1]-sh[i][1]]}
+  const xStar=[0,0],x0=[1,1/c],phiVal=Array(k+1).fill(0),sphi=Array.from({length:k+1},()=>[0,0]);
+  phiVal[0]=-1;sphi[0]=[0,0];
+  for(let i=1;i<=k;i++){phiVal[i]=-c/Math.sqrt(i);sphi[i]=[-phiVal[i]*sh[i][0],-phiVal[i]*sh[i][1]]}
+  function dot2(a,b){return a[0]*b[0]+a[1]*b[1]}
+  function fPoint(p){let val=0;for(let i=1;i<=k;i++){const dx=[p[0]-x[i][0],p[1]-x[i][1]],cand=fval[i]+dot2(dx,sf[i]);if(cand>val)val=cand}return val}
+  function phiPoint(p){let val=phiVal[0];for(let i=1;i<=k;i++){const dx=[p[0]-x[i][0],p[1]-x[i][1]],cand=phiVal[i]+dot2(dx,sphi[i]);if(cand>val)val=cand}return val}
+  function hPoint(p){const P=phiPoint(p);return P<0?-Math.log(-P):NaN}
+  return{k,c,gamma,B,fval,d,x,sh,sf,xStar,x0,phiVal,sphi,fPoint,phiPoint,hPoint}
+}
+function interpPoint(pA,pB,vA,vB){const t=vA/(vA-vB);return[pA[0]+t*(pB[0]-pA[0]),pA[1]+t*(pB[1]-pA[1])]}
+function contourSegmentsZero(u,v,P,fPoint){
+  const segs=[];
+  for(let j=0;j<v.length-1;j++)for(let i=0;i<u.length-1;i++){
+    const p00=[u[i],v[j]],p10=[u[i+1],v[j]],p11=[u[i+1],v[j+1]],p01=[u[i],v[j+1]];
+    const z00=P[j][i],z10=P[j][i+1],z11=P[j+1][i+1],z01=P[j+1][i];
+    const edges=[[p00,p10,z00,z10],[p10,p11,z10,z11],[p11,p01,z11,z01],[p01,p00,z01,z00]],pts=[];
+    for(const e of edges){const a=e[2],b=e[3];if(a===0&&b===0)continue;if((a<=0&&b>=0)||(a>=0&&b<=0)){if(a===b)continue;pts.push(interpPoint(e[0],e[1],a,b))}}
+    if(pts.length===2){const x1=pts[0][0],y1=pts[0][1],x2=pts[1][0],y2=pts[1][1];segs.push({x:[x1,x2],y:[y1,y2],zf:[fPoint([x1,y1]),fPoint([x2,y2])]})}
+    else if(pts.length===4){for(let q=0;q<4;q+=2){const x1=pts[q][0],y1=pts[q][1],x2=pts[q+1][0],y2=pts[q+1][1];segs.push({x:[x1,x2],y:[y1,y2],zf:[fPoint([x1,y1]),fPoint([x2,y2])]})}}
+  }
+  return segs
+}
+function buildData(k,c){
+  const cons=buildConstruction(k,c),u=linspace(-0.4,1.35,gridN),v=linspace(-0.5,Math.max(1/c+0.25,1.5),gridN),F=[],H=[],P=[];
+  for(let j=0;j<v.length;j++){const fr=[],hr=[],pr=[];for(let i=0;i<u.length;i++){const p=[u[i],v[j]],pp=cons.phiPoint(p),ff=cons.fPoint(p),hh=pp<0?-Math.log(-pp):NaN;pr.push(pp);fr.push(pp<0?ff:NaN);hr.push(hh)}F.push(fr);H.push(hr);P.push(pr)}
+  const hCut=percentile(H.flat().filter(Number.isFinite),99),HPlot=H.map(r=>r.map(z=>Number.isFinite(z)&&z<=hCut?z:NaN));
+  const boundarySegments=contourSegmentsZero(u,v,P,cons.fPoint),xs=[],ys=[],fs=[],hs=[];
+  for(let i=1;i<=k;i++){xs.push(cons.x[i][0]);ys.push(cons.x[i][1]);fs.push(cons.fPoint(cons.x[i]));hs.push(cons.hPoint(cons.x[i]))}
+  return{cons,u,v,F,HPlot,P,boundarySegments,xs,ys,fs,hs,h0:cons.hPoint(cons.x0),fMax:Math.max(1.5,maxFinite2D(F)),hMin:Math.min(0,minFinite2D(HPlot)),hCut}
+}
+function boundaryTracesObjective(segs){return segs.map(s=>({type:"scatter3d",mode:"lines",x:s.x,y:s.y,z:s.zf,line:{color:"red",width:4},hoverinfo:"skip",showlegend:false}))}
+function boundaryTracesBarrier(segs){return segs.map(s=>({type:"scatter3d",mode:"lines",x:s.x,y:s.y,z:[0,0],line:{color:"red",width:4},hoverinfo:"skip",showlegend:false}))}
+function baseLayout(zTitle,u,v,zRange){return{margin:{l:0,r:0,b:0,t:0},paper_bgcolor:"white",plot_bgcolor:"white",showlegend:false,scene:{camera:sharedCamera,xaxis:{title:"x(1)",range:[u[0],u[u.length-1]],tickmode:"array",tickvals:[u[0],u[u.length-1]],ticktext:[u[0].toFixed(2),u[u.length-1].toFixed(2)]},yaxis:{title:"x(2)",range:[v[0],v[v.length-1]],tickmode:"array",tickvals:[v[0],v[v.length-1]],ticktext:[v[0].toFixed(2),v[v.length-1].toFixed(2)]},zaxis:{title:zTitle,range:zRange},aspectmode:"manual",aspectratio:{x:1.25,y:1.25,z:.8}}}}
+function makeObjectiveFigure(data){const c=data.cons;return{traces:[{type:"surface",x:data.u,y:data.v,z:data.F,colorscale:"Viridis",opacity:.80,showscale:false,hoverinfo:"skip"},...boundaryTracesObjective(data.boundarySegments),{type:"scatter3d",mode:"markers",x:data.xs,y:data.ys,z:data.fs,marker:{size:4,color:"red",line:{color:"black",width:.5}},name:"x_i",hovertemplate:"x_i<br>x(1)=%{x:.3f}<br>x(2)=%{y:.3f}<br>f=%{z:.3f}<extra></extra>"},{type:"scatter3d",mode:"markers",x:[c.xStar[0]],y:[c.xStar[1]],z:[0],marker:{size:8,color:"yellow",symbol:"diamond",line:{color:"black",width:1}},name:"x_*",hovertemplate:"x_*<br>x(1)=%{x:.3f}<br>x(2)=%{y:.3f}<br>f=%{z:.3f}<extra></extra>"}],layout:baseLayout("f(x)",data.u,data.v,[0,data.fMax])}}
+function makeBarrierFigure(data){const c=data.cons;return{traces:[{type:"surface",x:data.u,y:data.v,z:data.HPlot,colorscale:"Viridis",opacity:.90,showscale:false,hoverinfo:"skip"},...boundaryTracesBarrier(data.boundarySegments),{type:"scatter3d",mode:"markers",x:data.xs,y:data.ys,z:data.hs,marker:{size:4,color:"red",line:{color:"black",width:.5}},name:"x_i",hovertemplate:"x_i<br>x(1)=%{x:.3f}<br>x(2)=%{y:.3f}<br>h=%{z:.3f}<extra></extra>"},{type:"scatter3d",mode:"markers",x:[c.x0[0]],y:[c.x0[1]],z:[data.h0],marker:{size:5,color:"yellow",symbol:"square",line:{color:"black",width:1}},name:"x_0",hovertemplate:"x_0<br>x(1)=%{x:.3f}<br>x(2)=%{y:.3f}<br>h=%{z:.3f}<extra></extra>"}],layout:baseLayout("h(x)",data.u,data.v,[data.hMin,data.hCut])}}
+function redraw(){const c=Number(cSlider.value),k=Number(kSlider.value);cValue.textContent=c.toFixed(2);kValue.textContent=String(k);const data=buildData(k,c),obj=makeObjectiveFigure(data),bar=makeBarrierFigure(data);Plotly.react(objectiveDiv,obj.traces,obj.layout,{responsive:true,displaylogo:false});Plotly.react(barrierDiv,bar.traces,bar.layout,{responsive:true,displaylogo:false})}
+function syncCamera(sourceDiv,targetDiv){sourceDiv.on("plotly_relayout",e=>{if(isSyncingCamera)return;const cam=e["scene.camera"];if(!cam)return;sharedCamera=cam;isSyncingCamera=true;Plotly.relayout(targetDiv,{"scene.camera":cam}).then(()=>{isSyncingCamera=false})})}
+cSlider.addEventListener("input",redraw);kSlider.addEventListener("input",redraw);syncCamera(objectiveDiv,barrierDiv);syncCamera(barrierDiv,objectiveDiv);redraw();
+</script>
+</body>
+</html>
