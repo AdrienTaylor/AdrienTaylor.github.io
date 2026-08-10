@@ -6,11 +6,10 @@ subtitle: <a href="https://www.di.ens.fr/sierra/">INRIA, École Normale Supérie
 
 profile:
   align: right
-  image: prof_picture2.jpeg
+  image: prof_pic.jpg
   address: >
-    <p>Rue Simone Iff 2
-    <p>75012 Paris, France</p>
-    <p>Office: C422 (level 4)</p>
+    <p>48 Rue Barrault, 
+    <p>75013 Paris, France</p>
     <p>first.last[at]inria.fr</p>
 
 news: false  # includes a list of news items
@@ -21,7 +20,9 @@ social: true  # includes social icons at the bottom of the page
 ## short biography
 hello !
 
-I am currently a research scientist at Inria, within the [SIERRA](https://www.di.ens.fr/sierra/) team. Before that, I was a postdoctoral researcher in the same team in 2017-2019, working with [Francis Bach](http://www.di.ens.fr/~fbach/). I completed a PhD at [Université catholique de Louvain](http://www.uclouvain.be), in the [department of mathematical engineering](https://www.uclouvain.be/en/research-institutes/icteam/inma) (part of the [ICTEAM](https://uclouvain.be/en/research-institutes/icteam) institute), where I was holding a F.R.S.-FNRS FRIA scholarship for my PhD under the supervision of [François Glineur](http://perso.uclouvain.be/francois.glineur) and [Julien Hendrickx](http://perso.uclouvain.be/julien.hendrickx).
+I am currently a research scientist at Inria, within the [SIERRA](https://www.di.ens.fr/sierra/) team. I am in the process of moving to [THOTH](https://thoth.inrialpes.fr/) team, lead by [Julien Mairal](https://thoth.inrialpes.fr/people/mairal/) in Grenoble, starting October 1st.
+
+Before that, I was a postdoctoral researcher in the same team in 2017-2019, working with [Francis Bach](http://www.di.ens.fr/~fbach/). I completed a PhD at [Université catholique de Louvain](http://www.uclouvain.be), in the [department of mathematical engineering](https://www.uclouvain.be/en/research-institutes/icteam/inma) (part of the [ICTEAM](https://uclouvain.be/en/research-institutes/icteam) institute), where I was holding a F.R.S.-FNRS FRIA scholarship for my PhD under the supervision of [François Glineur](http://perso.uclouvain.be/francois.glineur) and [Julien Hendrickx](http://perso.uclouvain.be/julien.hendrickx).
 
 My research currently focuses on optimization (mostly first-order) and numerical analysis with a bit of control and machine learning. I find it particularly important to push toward reproducible (including theory) and understandable science, and many of my research projects have this orientation. I had the chance to be awarded an ERC Starting Grant 2024 (project [CASPER](https://erc.europa.eu/sites/default/files/2024-09/erc-2024-stg-results-all-domains.pdf)) for working in this direction from fall 2024 to fall 2029.
 
@@ -33,7 +34,6 @@ My research currently focuses on optimization (mostly first-order) and numerical
 + [Lucas Haubert](https://www.linkedin.com/in/lucas-haubert-b668a421a/): numerical optimization engineer, working with (among others) [Justin Carpentier](https://jcarpent.github.io/),
 + [Fabian Schaipp](https://fabian-sp.github.io/): postdoc at Inria Paris, co-advised with [Umut Simsleki](https://www.di.ens.fr/umut.simsekli/) and [Francis Bach](https://www.di.ens.fr/~fbach/),
 + [Manu Upadhyaya](https://manuupadhyaya.github.io/): postdoc at Inria Paris, co-advised with [Aymeric Dieuleveut](http://www.cmap.polytechnique.fr/~aymeric.dieuleveut/) and [Baptiste Goujaud](https://bgoujaud.github.io/),
-+ [Pierre Vernimmen](https://www.uclouvain.be/fr/people/pierre.vernimmen): PhD student visiting from UCLouvain (co-advised with [Baptiste Goujaud](https://bgoujaud.github.io/)),
 + [Weijia Wang](https://weijia.wang/): PhD student at Sorbonne Université, co-advised with [Mohab Safey El Din](https://polsys.lip6.fr/~safey/) and [Simone Naldi](https://www.unilim.fr/pages_perso/simone.naldi/),
 + [Julien Weibel](https://www.normalesup.org/~jweibel/): postdoc at Inria Paris, co-advised with [Pierre Gaillard](http://pierre.gaillard.me/) and [Wouter Koolen](https://wouterkoolen.info/).
 
@@ -46,6 +46,7 @@ Past PhD visitors/interns:
 + [Shuvomoy Das Gupta](https://shuvomoy.github.io/): PhD student from MIT,
 + [Anne Rubbens](https://www.uclouvain.be/fr/people/anne.rubbens): PhD student from UCLouvain,
 + [Manu Upadhyaya](https://manuupadhyaya.github.io/): PhD student from Lund University,
-+ [Si Yi Meng](https://www.cs.cornell.edu/~siyimeng/): PhD student from Cornell University (co-advised with [Aymeric Dieuleveut](http://www.cmap.polytechnique.fr/~aymeric.dieuleveut/) and [Baptiste Goujaud](https://bgoujaud.github.io/)).
++ [Si Yi Meng](https://www.cs.cornell.edu/~siyimeng/): PhD student from Cornell University (co-advised with [Aymeric Dieuleveut](http://www.cmap.polytechnique.fr/~aymeric.dieuleveut/) and [Baptiste Goujaud](https://bgoujaud.github.io/)),
++ [Pierre Vernimmen](https://www.uclouvain.be/fr/people/pierre.vernimmen): PhD student visiting from UCLouvain (co-advised with [Baptiste Goujaud](https://bgoujaud.github.io/)).
 
 I was also fortunate to work closely with [Mathieu Barré](https://mathbarre.github.io/), [Radu-Dragomir Alexandru](https://radualexandrudragomir.github.io/), and [Benjamin Dubois-Taine](https://bpauld.github.io/).
