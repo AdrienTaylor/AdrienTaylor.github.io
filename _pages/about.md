@@ -20,7 +20,7 @@ social: true  # includes social icons at the bottom of the page
 ## short biography
 hello !
 
-I am currently a research scientist at Inria, within the [SIERRA](https://www.di.ens.fr/sierra/) team. I am in the process of moving to [THOTH](https://thoth.inrialpes.fr/) team, lead by [Julien Mairal](https://thoth.inrialpes.fr/people/mairal/) in Grenoble, starting October 1st.
+I am currently a research scientist at Inria, within the [SIERRA](https://www.di.ens.fr/sierra/) team. I am in the process of moving to the [THOTH](https://thoth.inrialpes.fr/) team, led by [Julien Mairal](https://thoth.inrialpes.fr/people/mairal/) in Grenoble, starting October 1st.
 
 Before that, I was a postdoctoral researcher in the same team in 2017-2019, working with [Francis Bach](http://www.di.ens.fr/~fbach/). I completed a PhD at [Université catholique de Louvain](http://www.uclouvain.be), in the [department of mathematical engineering](https://www.uclouvain.be/en/research-institutes/icteam/inma) (part of the [ICTEAM](https://uclouvain.be/en/research-institutes/icteam) institute), where I was holding a F.R.S.-FNRS FRIA scholarship for my PhD under the supervision of [François Glineur](http://perso.uclouvain.be/francois.glineur) and [Julien Hendrickx](http://perso.uclouvain.be/julien.hendrickx).
 
