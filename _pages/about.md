@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href="https://team.inria.fr/thoth/team-members/">Inria Grenoble, [Thoth](https://thoth.inrialpes.fr/) team</a>
+subtitle: <a href="https://thoth.inrialpes.fr/">Inria Grenoble, Thoth team</a>
 
 profile:
   align: right
